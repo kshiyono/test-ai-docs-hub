@@ -5,9 +5,9 @@ on:
 
 jobs:
   cursor-run:
-    if: github.event.label.name == 'in-progress'
+    if: github.event.label.name == 'In-Progress'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - name: Simulate cursor execution
-        run: echo "📘 Triggered by in-progress label!"
+        run: echo "📘 Triggered by In-Progress label!"
